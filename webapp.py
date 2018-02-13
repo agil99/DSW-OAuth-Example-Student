@@ -83,7 +83,7 @@ def renderPage2():
     if 'user_data' in session:
         user_data = session['user_data']['public_repos']
     else:
-        user_data_pprint = '';
+        user_data = '';
     return render_template('page2.html',public_repos=user_data)
 
 #the tokengetter is automatically called to check who is loggned in 
